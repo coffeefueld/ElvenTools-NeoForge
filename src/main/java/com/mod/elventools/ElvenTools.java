@@ -41,6 +41,7 @@ import net.minecraft.world.item.trading.ItemCost;
 import net.minecraft.world.item.trading.MerchantOffer;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -367,9 +368,9 @@ public class ElvenTools
 
         /* Making parsnip and cherry tomatoes and tomato seeds compostable */
         event.enqueueWork(() -> {
-            //ComposterBlock.COMPOSTABLES.put(ELVEN_PARSNIP.get(), 0.4F);
-            //ComposterBlock.COMPOSTABLES.put(ELVEN_CHERRY_TOMATOES.get(), 0.4F);
-            //ComposterBlock.COMPOSTABLES.put(ELVEN_CHERRY_TOMATOES_SEEDS.get(), 0.15F);
+            ComposterBlock.COMPOSTABLES.put(ELVEN_PARSNIP.get(), 0.4F);
+            ComposterBlock.COMPOSTABLES.put(ELVEN_CHERRY_TOMATOES.get(), 0.4F);
+            ComposterBlock.COMPOSTABLES.put(ELVEN_CHERRY_TOMATOES_SEEDS.get(), 0.15F);
             
         });
     
