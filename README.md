@@ -1,17 +1,17 @@
 # Elven Tools
-*A minecraft 1.21.1 mod*
+*A minecraft 1.21.1 mod*\n
 This is the NeoForge version of the mod, for the forge version you can visit [ElvenTools](https://github.com/coffeefueld/ElvenTools)
 ## Prerequisites
 ### The mod was developed with and requires:
   - Minecraft 1.21.1
-  - Forge 52.0.40
+  - NeoForge 21.1.122
   - Java 21
 ## Installation instructions
 ### Through gradle
 #### Step 1
 Clone the repository
 ```Bash/Zsh
-git clone https://github.com/coffeefueld/ElvenTools
+git clone https://github.com/coffeefueld/ElvenTools-NeoForge
 ```
 #### Step 2
 Run the client
