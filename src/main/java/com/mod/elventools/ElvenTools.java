@@ -85,17 +85,23 @@ public class ElvenTools
     // Ruby Ore Block
     public static final DeferredBlock<DropExperienceBlock> RUBY_ORE_BLOCK = BLOCKS.register("ruby_ore_block",
             () -> new DropExperienceBlock(UniformInt.of(4, 10), //Experience drop range 
-                     BlockBehaviour.Properties.of()
-                     .mapColor(MapColor.STONE)
-                     .strength(3f)
-                     .sound(SoundType.STONE)
-                     .requiresCorrectToolForDrops()
+                     BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
             )
     );
     
     //Ruby Ore Block item
     public static final DeferredItem<Item> RUBY_ORE_BLOCK_ITEM = ITEMS.register("ruby_ore_block", () -> new BlockItem(RUBY_ORE_BLOCK.get(), new Item.Properties()));
     
+    // Deepslate Ruby Ore Block
+    public static final DeferredBlock<DropExperienceBlock> DEEPSLATE_RUBY_ORE_BLOCK = BLOCKS.register("deepslate_ruby_ore_block",
+            () -> new DropExperienceBlock(UniformInt.of(4, 10), //Experience drop range 
+                     BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
+            )
+    );
+    
+    // Deepslate Ruby Ore Block item
+    public static final DeferredItem<Item> DEEPSLATE_RUBY_ORE_BLOCK_ITEM = ITEMS.register("deepslate_ruby_ore_block", () -> new BlockItem(DEEPSLATE_RUBY_ORE_BLOCK.get(), new Item.Properties()));
+
     //Ruby Block 
     public static final DeferredBlock<Block> RUBY_BLOCK = BLOCKS.register("ruby_block",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK))
@@ -306,6 +312,7 @@ public class ElvenTools
             .title(Component.translatable(MODID + ".cmode_tab"))
             .displayItems((parameters, output) -> {
                     output.accept(RUBY_ORE_BLOCK.get());
+                    output.accept(DEEPSLATE_RUBY_ORE_BLOCK.get());
                     output.accept(RUBY_BLOCK.get());
                     output.accept(RUBY.get());
                     output.accept(ELVEN_BREAD.get());
