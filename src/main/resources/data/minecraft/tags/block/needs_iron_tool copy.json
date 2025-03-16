@@ -2,7 +2,6 @@
     "replace": false,
     "values": [
         "elventools:ruby_ore_block",
-        "elventools:deepslate_ruby_ore_block",
-        "elventools:ruby_block"
+        "elventools:deepslate_ruby_ore_block"
     ]
 }
